@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head> 
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<title>Emily's Porfolio</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    
+}
+nav,.logo
+ {
+    display:flex;
+    align-items: center ;
+    justify-content: space-around;
+    background-color: #ADD8E6;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    align-items: center;
+}
+nav ul li a , .logo{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.project-grid {
+	--gap: 16px;
+	--num-cols: 4;
+	--row-height: 300px;
+
+	box-sizing: border-box;
+	padding: var(--gap);
+
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+}
+.project-grid>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+	.project-grid {
+		--num-cols: 2;
+		--row-height: 200px;
+	}
+}
+</style>
+
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">Emily Lara</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="profile">
+        <div class="profile-pic-container">
+                <img src="IMG_5695.jpg"  width= "200px alt="Emily Lara Profile Picture">
+        </div>
+
+    </section>
+    <div id="home">
+        
+    </div>
+    <div id="about" class=".about">
+        <p>
+            Hello, I'm Emily and I'm a soon to be {G} Code alumni. Over the past few months, I've dedicated myself to honing my skills and crafting a comprehensive portfolio featuring my freelance endeavors. My expertise lies in developing responsive websites tailored for small businesses, highlighting my commitment to delivering impactful digital solutions.
+    </div>
+    <div id="work" class=".work">
+        <h2>My work</h2>
+        <a href="https://github.com/emilypaz2196">Github Profile</a>
+                <a href="www.linkedin.com/in/emily-lara-169426163">Linkedin Profile</a>
+                <div class="project-grid">
+                    <img src="https://slp-statics.astockcdn.net/static_assets/staging/22spring/free/browse-vector-categories-collections/Card4_399895799.jpg?width=580" alt="project 1">
+                    <img src="https://slp-statics.astockcdn.net/static_assets/staging/22spring/free/browse-vector-categories-collections/Card4_399895799.jpg?width=580" alt="project 2">
+                    <img src="https://slp-statics.astockcdn.net/static_assets/staging/22spring/free/browse-vector-categories-collections/Card4_399895799.jpg?width=580" alt="project 3">
+                    <img src="https://slp-statics.astockcdn.net/static_assets/staging/22spring/free/browse-vector-categories-collections/Card4_399895799.jpg?width=580" alt="project 4">
+                </div>
+    </div>
+    <div id="contact" class=".contact">
+        <h2>Contact Me</h2>
+        <P><a href="Emilypaz2196@gmail.com">emilypaz2196@gmail.com</a> <br>
+            917-333-1234
+        </P>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+
+    <footer>
+        <p>Follow me on social media</p>
+      </footer>
+
+</body>
+
+<body> 
+    
+    
